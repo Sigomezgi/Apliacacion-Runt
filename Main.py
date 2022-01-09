@@ -13,7 +13,6 @@ import datetime as dte
 import calendar
 import numpy as np
 import joblib
-from PIL import Image
 from streamlit_player import st_player
 
 
