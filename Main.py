@@ -17,7 +17,7 @@ from PIL import Image
 from streamlit_player import st_player
 
 
-image = Image.open('runt.PNG')
+#image = Image.open('runt.PNG')
 
 header = st.container()
 Dataset = st.container()
@@ -159,7 +159,7 @@ with Prediction:
     num = ['Year', 'Month','Day', 'Festivo','Holidays','Dayweek_Friday','Dayweek_Monday','Dayweek_Saturday',
            'Dayweek_Sunday','Dayweek_Thursday','Dayweek_Tuesday','Dayweek_Wednesday']
            
-           
+    col3.markdown("![Alt Text](data:image/png;base64,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)")        
     pred = pd.get_dummies(pred)
     
     boton = sel_col.button('Predecir')
@@ -185,7 +185,8 @@ with Resultado:
         
         st.markdown('<p class="big-font"> %s Registros !!!</p>'%yrunt, unsafe_allow_html=True)
         #col3.markdown('<p class="big-font">Registros !!</p>', unsafe_allow_html=True)
-        st.image(image)
+        #st.image(image)
+        #st.markdown("![Alt Text](https://giphy.com/gifs/mediamodifier-eivVnPUWgH6mzLORxn?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=https://giphy.com/)") 
         
     
         
